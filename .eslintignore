@@ -1,6 +1,7 @@
 .vscode/
 *.code-workspace
 *.html
+*.css
 dist/
 Dockerfile
 docker-compose.yml

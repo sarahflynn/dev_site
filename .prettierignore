@@ -6,3 +6,4 @@ Dockerfile
 Jenkinsfile
 Readme.md
 yarn-error.log
+*.css

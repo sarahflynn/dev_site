@@ -1,26 +1,21 @@
-import * as React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import {
-  AppBar,
-  Toolbar,
-  useScrollTrigger,
-  Typography,
-} from "@material-ui/core";
+import * as React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import { AppBar, Toolbar, useScrollTrigger, Typography } from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   toolbarMargin: {
     ...theme.mixins.toolbar,
-    marginBottom: "3em",
-    [theme.breakpoints.down("md")]: {
-      marginBottom: "2em",
+    marginBottom: '3em',
+    [theme.breakpoints.down('md')]: {
+      marginBottom: '2em',
     },
-    [theme.breakpoints.down("xs")]: {
-      marginBottom: "1.25em",
+    [theme.breakpoints.down('xs')]: {
+      marginBottom: '1.25em',
     },
   },
 }));
 
-const ElevationScroll = (props) => {
+const ElevationScroll = props => {
   const { children } = props;
 
   const trigger = useScrollTrigger({
@@ -39,7 +34,7 @@ export default function Header(): React.ReactElement {
   return (
     <>
       <ElevationScroll>
-        <AppBar position="fixed">
+        <AppBar position='fixed'>
           <Toolbar disableGutters>
             <Typography>Hello</Typography>
           </Toolbar>

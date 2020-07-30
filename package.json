@@ -30,32 +30,11 @@
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.1"
+    "react-router-dom": "^5.2.0"
   },
   "scripts": {
-    "build": "react-scripts build",
     "clean": "concurrently \"rm -rf node_modules\" \"rm -rf dist\" && npm i",
-    "eject": "react-scripts eject",
     "lint:fix": "npm run lint -- --fix",
-    "lint": "npx eslint \"./**\"",
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "update:packages": "concurrently \"rm -rf node_modules\" \"rm -rf dist\" && ncu -u && npm i"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "lint": "npx eslint \"./**\""
   }
 }
